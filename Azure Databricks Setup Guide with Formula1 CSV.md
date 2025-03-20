@@ -8,21 +8,21 @@
 
 For the Storage account resource I created this later on in the section*: ***Accessing Data Lake from Databricks**
 
-![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%201.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image.png)
 
 Overview in resource groups:
 
-![image.png](image%201.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%201.png)
 
 ## Databricks Setup
 
 1. Once those resources are created and deployed I launched the Databricks workspace from the resource.
 
-![image.png](image%202.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%202.png)
 
 1. Created a cluster and these were the configurations
 
-![image.png](image%203.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%203.png)
 
 1. Once done, I started the cluster waited for it start up and then created my notebooks.
 

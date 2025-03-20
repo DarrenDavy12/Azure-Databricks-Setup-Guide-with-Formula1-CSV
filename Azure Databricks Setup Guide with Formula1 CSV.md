@@ -8,7 +8,7 @@
 
 For the Storage account resource I created this later on in the section*: ***Accessing Data Lake from Databricks**
 
-![image.png](image.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%201.png)
 
 Overview in resource groups:
 

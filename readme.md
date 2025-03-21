@@ -16,13 +16,22 @@ This section details the configuration of the Databricks environment:
 
 ## Steps include:
 Launch the Databricks workspace from the resource, withfor reference.
+![Image](https://github.com/user-attachments/assets/255462fd-930a-4137-ade3-52daf6a99663)
+
 Create a cluster with specific configurations, shown in.
-Start the cluster, wait for initialization, and create four Python notebooks in a subfolder "Formula1/set-up", covering access methods like access keys, SAS tokens, service principals, and cluster scoped credentials, with.
+![Image](https://github.com/user-attachments/assets/83fc8d6c-6f91-4734-bca3-85d8c7ce4148)
+
+
+3. Start the cluster, wait for initialization, and create four Python notebooks in a subfolder "Formula1/set-up", covering access methods like access keys, SAS tokens, service principals, and cluster scoped credentials, with.
+![Image](https://github.com/user-attachments/assets/cdf528bf-396e-4b2c-a74a-9219cfc01f67)
+
+
 Accessing Data Lake from Databricks
 This section outlines various methods to access Azure Data Lake Storage (ADLS):
+![Image](https://github.com/user-attachments/assets/86b521be-fc21-4d88-aa50-ee37cc7fa2d3)
 
-## Creating Azure Data Lake Storage Gen2:
-Create a storage account "formula1dlg2" with standard performance, LRS replication, and enable ADLS Gen2 (hierarchical namespace). Reference.
+Creating Azure Data Lake Storage Gen2:
+  Create a storage account "formula1dlg2" with standard performance, LRS replication, and enable ADLS Gen2 (hierarchical namespace). Reference.
 Creating Containers:
 Create containers: raw (bronze), processed (silver), presentation (gold), and demo (practice), with.
 Upload "circuits.csv" to the demo container, shown in.

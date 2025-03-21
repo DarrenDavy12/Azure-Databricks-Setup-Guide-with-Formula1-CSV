@@ -1,14 +1,14 @@
-Azure Databricks Setup Guide with Formula1 CSV - Azure Databricks, PySpark, Python, Data Lake Storage
-
 Resource Setup
 This section covers the initial setup of necessary Azure resources:
 
 Setup:
 Create a Databricks workspace named "databrickslearning-ws" (premium tier).
+
+![Image](https://github.com/user-attachments/assets/4509beaa-5e24-4db9-80a2-48f8ac204293)
+
+
 Note that the storage account is created later in the "Accessing Data Lake from Databricks" section.
-Include images for visual reference:
-Resource setup:
-Resource groups overview:
+
 Databricks Setup
 This section details the configuration of the Databricks environment:
 
@@ -42,11 +42,21 @@ Create a Key Vault named "formula1-az-key-vault1" in the same resource group, se
 
 
 Creating Secret Scope for Databricks:
-Navigate to workspace, append #secrets/createScope to URL, name scope "formula1-scope", and provide DNS name and Resource ID.
+Navigate to workspace, append #secrets/createScope to URL, name scope "formula1-scope", and provide DNS name and Resource ID, with images:
+
+
+
+
+
 Databricks Secrets Utility:
-Create notebook "explore_dbutils_secrets_utility" to manage secrets, avoiding hardcoded values.
+Create notebook "explore_dbutils_secrets_utility" to manage secrets, avoiding hardcoded values, with images:
+
+
 Using Secrets in Notebooks:
-For access keys, use dbutils.secrets.get and assign to variables.
+For access keys, use dbutils.secrets.get and assign to variables, with images:
+
+
+
 For SAS token, generate new token, store in Key Vault, and use code:
 python
 
@@ -56,9 +66,33 @@ Wrap
 
 Copy
 formula1dlg2_demo_sas_token = dbutils.secrets.get(scope = 'formula1-scope', key = 'fomula1dlg2-demo-sas-token')
-For service principal, store Client ID, Tenant ID, and Client Secret in Key Vault, replacing hardcoded values.
+with images:
+
+
+
+
+
+
+
+
+
+For service principal, store Client ID, Tenant ID, and Client Secret in Key Vault, replacing hardcoded values, with images:
+
+
+
+
+
+
+
+
+
+
+
 Using Secrets in Clusters:
-Add Spark config in cluster settings, restart cluster, and test access without notebook configurations. Note requirement for mounting in certain subscriptions.
+Add Spark config in cluster settings, restart cluster, and test access without notebook configurations. Note requirement for mounting in certain subscriptions, with images:
+
+
+
 Mounting Data Lake Container to Databricks
 This section covers mounting for easier data access:
 
@@ -68,15 +102,39 @@ Access files using file semantics storage URLs (e.g., /mnt/storage1)
 Stores files to object storage (e.g., Azure Blob), leveraging all Azure benefits
 Recommended solution until Unity Catalog introduction
 Databricks File System (DBFS):
-Create notebook "explore_dbfs_root", list root folders with display(dbutils.fs.ls('/')), enable DBFS File Browser, and upload files. Note limitations for customer data.
+Create notebook "explore_dbfs_root", list root folders with display(dbutils.fs.ls('/')), enable DBFS File Browser, and upload files. Note limitations for customer data, with images:
+
+
+
+
+
+
+
+
+
+
 Mounting Azure Data Lake Storage Gen2:
-Clone service principal notebook, use Key Vault credentials, mount with dbutils.fs.mount, and explore utilities. Include.
+Clone service principal notebook, use Key Vault credentials, mount with dbutils.fs.mount, and explore utilities. Include images:
+
+
+
+
+
+
+
+
+
 Mounting with Python Function:
-Create mount_adls function for dynamic mounting, shown in, and use for other containers, adding unmount logic to avoid errors.
+Create mount_adls function for dynamic mounting, shown in, and use for other containers, adding unmount logic to avoid errors, with images:
+
+
+
+
+
 Tables for Organization
 To enhance readability, here is a table summarizing the access methods and their steps:
 
-Method	Key Steps	Images
+Method	Key Steps	Image Placeholders
 Access Keys	Set Spark config, list files, read data	, 
 SAS Token	Set Spark config, list files, read data	, 
 Service Principal	Register app, generate secret, set config, assign role	
@@ -90,7 +148,7 @@ formula1-app-client-id	Client ID	Service principal authentication
 formula1-app-tenant-id	Tenant ID	Service principal authentication
 formula1-app-client-secret	Client Secret	Service principal authentication
 Conclusion
-This comprehensive guide ensures all aspects of the setup are covered, from initial resource creation to secure and efficient data access, with detailed steps and visual aids. The formatted README.md file is ready for GitHub, providing a professional resource for users to follow, with raw URLs for images ensuring accessibility.
+This comprehensive guide ensures all aspects of the setup are covered, from initial resource creation to secure and efficient data access, with detailed steps and image placeholders. The formatted README.md file is ready for GitHub, providing a professional resource for users to follow, with relative paths for images ensuring accessibility.
 
 Key Citations
 Image - Azure Databricks learn how to read image files using Azure Databricks

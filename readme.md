@@ -15,14 +15,14 @@ Note that the storage account is created later in the "Accessing Data Lake from 
 This section details the configuration of the Databricks environment:
 
 ## Steps include:
-Launch the Databricks workspace from the resource, withfor reference.
+Launch the Databricks workspace from the resource.
 ![Image](https://github.com/user-attachments/assets/255462fd-930a-4137-ade3-52daf6a99663)
 
-Create a cluster with specific configurations, shown in.
+Create a cluster with specific configurations.
 ![Image](https://github.com/user-attachments/assets/83fc8d6c-6f91-4734-bca3-85d8c7ce4148)
 
 
-3. Start the cluster, wait for initialization, and create four Python notebooks in a subfolder "Formula1/set-up", covering access methods like access keys, SAS tokens, service principals, and cluster scoped credentials, with.
+Start the cluster, wait for initialization, and create four Python notebooks in a subfolder "Formula1/set-up", covering access methods like access keys, SAS tokens, service principals, and cluster scoped credentials.
 ![Image](https://github.com/user-attachments/assets/cdf528bf-396e-4b2c-a74a-9219cfc01f67)
 
 
@@ -30,14 +30,29 @@ Accessing Data Lake from Databricks
 This section outlines various methods to access Azure Data Lake Storage (ADLS):
 ![Image](https://github.com/user-attachments/assets/86b521be-fc21-4d88-aa50-ee37cc7fa2d3)
 
+
 Creating Azure Data Lake Storage Gen2:
-  Create a storage account "formula1dlg2" with standard performance, LRS replication, and enable ADLS Gen2 (hierarchical namespace). Reference.
+Create a storage account "formula1dlg2" with standard performance, LRS replication, and enable ADLS Gen2 (hierarchical namespace).
+![Image](https://github.com/user-attachments/assets/c731e0f9-3ac1-4e44-a596-a545c78e324e)
+
+
 Creating Containers:
-Create containers: raw (bronze), processed (silver), presentation (gold), and demo (practice), with.
-Upload "circuits.csv" to the demo container, shown in.
+Create containers: raw (bronze), processed (silver), presentation (gold), and demo (practice)
+![Image](https://github.com/user-attachments/assets/2cf94c30-945b-48ab-b61e-d8db8970fb0f)
+
+
+Upload "circuits.csv" to the demo container.
+![image](https://github.com/user-attachments/assets/16107883-d8e3-432f-b106-fb2ace704bd4)
+
+
 Access Methods:
-Using Access Keys: Set Spark config fs.azure.account.key, list files, and read data, with imagesand.
-Using SAS Token: Similar steps, with imagesand.
+Using Access Keys: Set Spark config fs.azure.account.key, list files, and read data.
+![image](https://github.com/user-attachments/assets/50aaf024-27ef-46cf-874b-2c8e7aa731b2)
+
+![Image](https://github.com/user-attachments/assets/4d8d9bdd-b6ab-45f3-8ac8-4a272cd0dd77)
+
+Using SAS Token: Similar steps, with images.
+
 Using Service Principal: Register application, generate secret, set Spark config, and assign role, with.
 Using Cluster Scoped Credentials: Set Spark config in cluster, list files, and read data, with imagesand.
 Securing Access to Azure Data Lake

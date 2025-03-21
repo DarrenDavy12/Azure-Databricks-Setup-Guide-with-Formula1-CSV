@@ -1,8 +1,9 @@
-Resource Setup
-This section covers the initial setup of necessary Azure resources:
+#### Resource Setup
 
-Setup:
-Create a Databricks workspace named "databrickslearning-ws" (premium tier).
+### This section covers the initial setup of necessary Azure resources:
+
+## Setup:
+## Create a Databricks workspace named "databrickslearning-ws" (premium tier).
 
 ![Image](https://github.com/user-attachments/assets/4509beaa-5e24-4db9-80a2-48f8ac204293)
 
@@ -11,10 +12,10 @@ Note that the storage account is created later in the "Accessing Data Lake from 
 
 ![Image](https://github.com/user-attachments/assets/df8c79e1-3006-4b06-a17c-60badfe29415)
 
-Databricks Setup
+## Databricks Setup
 This section details the configuration of the Databricks environment:
 
-Steps include:
+## Steps include:
 Launch the Databricks workspace from the resource, withfor reference.
 Create a cluster with specific configurations, shown in.
 Start the cluster, wait for initialization, and create four Python notebooks in a subfolder "Formula1/set-up", covering access methods like access keys, SAS tokens, service principals, and cluster scoped credentials, with.

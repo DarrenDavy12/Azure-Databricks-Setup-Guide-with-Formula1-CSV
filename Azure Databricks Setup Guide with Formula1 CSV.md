@@ -28,7 +28,7 @@ Overview in resource groups:
 
 I made four python notebooks inside a freshly created subfolder “Formula1/set-up”, containing different ways of accessing in Data Lake including **access keys**, **SAS Authentication token**, **service principal** or by **cluster scoped credentials**.  
 
-![image.png](image%204.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%204.png)
 
 # Accessing Data Lake from Databricks:
 
@@ -36,7 +36,7 @@ I made four python notebooks inside a freshly created subfolder “Formula1/set-
 
 I created a storage account called **“formula1dlg2”,** chose **standard performance** while selecting **LRS (Locally zone redundant)** as replication setting and Azure Data Lake Storage Gen2 (check the **hierarchical namespace** box), left everything else as default and created the resource. 
 
-![image.png](image%205.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%205.png)
 
 ## 2. Creating the Containers inside Storage account (medallion Architecture)
 
@@ -45,11 +45,11 @@ I created a storage account called **“formula1dlg2”,** chose **standard perf
 3. presentation - for analysed data (gold)
 4. demo - *this is used for practicing with data lake outside of the project*
 
-![image.png](image%206.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%206.png)
 
 I went into the demo container to upload a .csv file called ‘circuits.csv’. 
 
-![image.png](image%207.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%207.png)
 
 ## 3. Access ADLS (Data Lake) using access keys
 
@@ -57,9 +57,9 @@ I went into the demo container to upload a .csv file called ‘circuits.csv’.
 2. List files from demo container
 3. Read data from circuits.csv file
 
-![image.png](image%208.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%208.png)
 
-![image.png](image%209.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%209.png)
 
 ## 4. Access ADLS (Data Lake) using SAS token
 
@@ -67,9 +67,9 @@ I went into the demo container to upload a .csv file called ‘circuits.csv’.
 2. List files from demo container
 3. Read data from circuits.csv file
 
-![image.png](image%2010.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2010.png)
 
-![image.png](image%2011.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2011.png)
 
 ## 5. Access ADLS (Data Lake) using Service Principal
 
@@ -78,7 +78,7 @@ I went into the demo container to upload a .csv file called ‘circuits.csv’.
 3. Set Spark Config wit App / Client Id, Directory / Tenant Id & Secret
 4. Assign Role 'Storage Blob Data Contributor' to the Data Lake.
 
-![image.png](image%2012.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2012.png)
 
 ## 6. Access ADLS (Data Lake) using cluster scoped credentials
 
@@ -86,38 +86,38 @@ I went into the demo container to upload a .csv file called ‘circuits.csv’.
 2. List files from demo container
 3. Read data from circuits.csv
 
-![image.png](image%2013.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2013.png)
 
-![image.png](image%2014.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2014.png)
 
 # Securing Access to Azure Data Lake:
 
 ## 1. Creating Azure Key Vault
 
-![image.png](image%2015.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2015.png)
 
 1. Selected the same resource group I created at the start of the project.
 2. Gave the name `formula1-az-key-vault1` and selected the closest region which in my case is `UK South`
 
-![image.png](image%2016.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2016.png)
 
 1. In the next tab, on access configuration I selected ‘vault access policy’
 
-![image.png](image%2017.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2017.png)
 
 1. Left all other tabs as default and created the key vault.
 
-![image.png](image%2018.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2018.png)
 
 1. Once the key vault resource is deployed, I went inside the resource and selected the secrets tab to generate a new secret. 
 
-![image.png](image%2019.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2019.png)
 
-![image.png](image%2020.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2020.png)
 
 1. Copied key inside `spark conf` in the first notebook: “access_adls_using_access_keys”
 
-![image.png](image%2021.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2021.png)
 
 1. Back inside the key vault on another tab I pasted the key, gave a name to the secret and content type. 
 
@@ -127,7 +127,7 @@ Secret value: [Copied key from notebook 1]
 
 Content type: “Storage Account Key”
 
-![image.png](image%2022.png)
+![image.png](https://github.com/DarrenDavy12/Azure-Databricks-Setup-Guide-with-Formula1-CSV/blob/main/images/image%2022.png)
 
 ## 2. Creating Secret Scope for Databricks
 

@@ -1,6 +1,6 @@
-#### Resource Setup
+## Resource Setup
 
-### This section covers the initial setup of necessary Azure resources:
+## This section covers the initial setup of necessary Azure resources:
 
 ## Setup:
 

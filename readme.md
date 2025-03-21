@@ -3,7 +3,8 @@
 ### This section covers the initial setup of necessary Azure resources:
 
 ## Setup:
-## Create a Databricks workspace named "databrickslearning-ws" (premium tier).
+
+Create a Databricks workspace named "databrickslearning-ws" (premium tier).
 
 ![Image](https://github.com/user-attachments/assets/4509beaa-5e24-4db9-80a2-48f8ac204293)
 
@@ -22,7 +23,7 @@ Start the cluster, wait for initialization, and create four Python notebooks in 
 Accessing Data Lake from Databricks
 This section outlines various methods to access Azure Data Lake Storage (ADLS):
 
-Creating Azure Data Lake Storage Gen2:
+## Creating Azure Data Lake Storage Gen2:
 Create a storage account "formula1dlg2" with standard performance, LRS replication, and enable ADLS Gen2 (hierarchical namespace). Reference.
 Creating Containers:
 Create containers: raw (bronze), processed (silver), presentation (gold), and demo (practice), with.
@@ -35,7 +36,7 @@ Using Cluster Scoped Credentials: Set Spark config in cluster, list files, and r
 Securing Access to Azure Data Lake
 This section focuses on enhancing security:
 
-Creating Azure Key Vault:
+## Creating Azure Key Vault:
 Create a Key Vault named "formula1-az-key-vault1" in the same resource group, select region (e.g., UK South), and configure access policy. Include images for each step:
 
 
@@ -44,18 +45,18 @@ Create a Key Vault named "formula1-az-key-vault1" in the same resource group, se
 
 
 
-Creating Secret Scope for Databricks:
+## Creating Secret Scope for Databricks:
 Navigate to workspace, append #secrets/createScope to URL, name scope "formula1-scope", and provide DNS name and Resource ID, with images:
 
 
 
 
 
-Databricks Secrets Utility:
+## Databricks Secrets Utility:
 Create notebook "explore_dbutils_secrets_utility" to manage secrets, avoiding hardcoded values, with images:
 
 
-Using Secrets in Notebooks:
+## Using Secrets in Notebooks:
 For access keys, use dbutils.secrets.get and assign to variables, with images:
 
 
@@ -91,12 +92,12 @@ For service principal, store Client ID, Tenant ID, and Client Secret in Key Vaul
 
 
 
-Using Secrets in Clusters:
+## Using Secrets in Clusters:
 Add Spark config in cluster settings, restart cluster, and test access without notebook configurations. Note requirement for mounting in certain subscriptions, with images:
 
 
 
-Mounting Data Lake Container to Databricks
+## Mounting Data Lake Container to Databricks
 This section covers mounting for easier data access:
 
 Benefits (unordered list):
@@ -134,7 +135,7 @@ Create mount_adls function for dynamic mounting, shown in, and use for other con
 
 
 
-Tables for Organization
+## Tables for Organization
 To enhance readability, here is a table summarizing the access methods and their steps:
 
 Method	Key Steps	Image Placeholders
@@ -153,7 +154,7 @@ formula1-app-client-secret	Client Secret	Service principal authentication
 Conclusion
 This comprehensive guide ensures all aspects of the setup are covered, from initial resource creation to secure and efficient data access, with detailed steps and image placeholders. The formatted README.md file is ready for GitHub, providing a professional resource for users to follow, with relative paths for images ensuring accessibility.
 
-Key Citations
+## Key Citations
 Image - Azure Databricks learn how to read image files using Azure Databricks
 GitHub - Azure Databricks hands-on step by step workshop
 Formula1 Racing Project using Azure Databricks, ADLS & ADF Medium article

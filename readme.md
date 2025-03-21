@@ -5,8 +5,6 @@ Setup:
 Create a Databricks workspace named "databrickslearning-ws" (premium tier).
 
 
-
-
 ![Image](https://github.com/user-attachments/assets/4509beaa-5e24-4db9-80a2-48f8ac204293)
 
 

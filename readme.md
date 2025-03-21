@@ -1,6 +1,6 @@
-## Resource Setup
+## Azure Databricks Setup Guide with Formula1 CSV - Azure Databricks, PySpark, Python, Data Lake Storage
 
-## This section covers the initial setup of necessary Azure resources:
+### This section covers the initial setup of necessary Azure resources:
 
 ## Setup:
 

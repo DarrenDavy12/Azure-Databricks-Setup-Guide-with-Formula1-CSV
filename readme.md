@@ -135,32 +135,5 @@ Create mount_adls function for dynamic mounting, shown in, and use for other con
 
 
 
-## Tables for Organization
-To enhance readability, here is a table summarizing the access methods and their steps:
 
-Method	Key Steps	Image Placeholders
-Access Keys	Set Spark config, list files, read data	, 
-SAS Token	Set Spark config, list files, read data	, 
-Service Principal	Register app, generate secret, set config, assign role	
-Cluster Scoped Credentials	Set Spark config in cluster, list files, read data	, 
-Another table for Key Vault secrets:
 
-Secret Name	Type	Purpose
-formula1dlg2-account-key	Storage Account Key	Secure storage account access
-fomula1dlg2-demo-sas-token	SAS Token	Secure demo container access
-formula1-app-client-id	Client ID	Service principal authentication
-formula1-app-tenant-id	Tenant ID	Service principal authentication
-formula1-app-client-secret	Client Secret	Service principal authentication
-Conclusion
-This comprehensive guide ensures all aspects of the setup are covered, from initial resource creation to secure and efficient data access, with detailed steps and image placeholders. The formatted README.md file is ready for GitHub, providing a professional resource for users to follow, with relative paths for images ensuring accessibility.
-
-## Key Citations
-Image - Azure Databricks learn how to read image files using Azure Databricks
-GitHub - Azure Databricks hands-on step by step workshop
-Formula1 Racing Project using Azure Databricks, ADLS & ADF Medium article
-GitHub - data pipeline project build on databricks and azure
-Read CSV files - Azure Databricks Microsoft Learn
-Image | Databricks Documentation AWS learn how to read image files
-GitHub - Real World Project on Formula1 Racing using Azure Databricks
-Sample datasets - Azure Databricks Microsoft Learn
-GitHub - Azure-based solution for ingesting and analyzing Formula 1 data

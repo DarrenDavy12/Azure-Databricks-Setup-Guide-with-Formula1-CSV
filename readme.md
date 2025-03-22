@@ -89,30 +89,51 @@ Navigate to workspace, append #secrets/createScope to URL, name scope "formula1-
 
 ![Image](https://github.com/user-attachments/assets/a65d07b8-5d2c-4563-b63b-4be70ce184ad)
 
+![Image](https://github.com/user-attachments/assets/934292d1-1ad0-4c29-bd69-57f96459de61)
 
+![Image](https://github.com/user-attachments/assets/bf114e9d-dce7-4df9-9439-16cd59b457d9)
+
+![Image](https://github.com/user-attachments/assets/d621bfa1-6d66-4ade-979f-3caf00fbc83d)
+
+![Image](https://github.com/user-attachments/assets/88db3695-5326-49bb-872a-17015b6304ca)
 
 
 ## Databricks Secrets Utility:
 Create notebook "explore_dbutils_secrets_utility" to manage secrets, avoiding hardcoded values.
 
+![Image](https://github.com/user-attachments/assets/89268ad6-a56f-48a3-a9a0-53ca5e9e33bc)
 
+![Image](https://github.com/user-attachments/assets/73e175d0-2131-400f-8f93-40e255ee551b)
 
 
 ## Using Secrets in Notebooks:
 For access keys, use dbutils.secrets.get and assign to variables.
 
+![Image](https://github.com/user-attachments/assets/f33a9647-08e3-4fed-9cb2-24344164b91c)
+
+![Image](https://github.com/user-attachments/assets/05ad0caa-da33-4b41-b56e-0a9d5666604b)
+
+![Image](https://github.com/user-attachments/assets/76c5b87e-37bd-48e0-a6f2-f729300e7afc)
 
 
 For SAS token, generate new token, store in Key Vault, and use code:
-python
 
-Collapse
+![Image](https://github.com/user-attachments/assets/d306e5a7-c20c-497f-87a1-203c5c8471dd)
 
-Wrap
+![Image](https://github.com/user-attachments/assets/b0e0ca34-906c-47c7-a431-e7deaa6e9696)
 
-Copy
+![Image](https://github.com/user-attachments/assets/e312dd70-5a15-49c9-bf0f-c3a012bc6953)
+
+![Image](https://github.com/user-attachments/assets/f861a225-28ec-4638-b1a5-a7ae6a3e9383)
+
+![Image](https://github.com/user-attachments/assets/a28f0f9a-84e7-42b3-9afa-4d5d38fa7b67)
+
+
+python:
+
 formula1dlg2_demo_sas_token = dbutils.secrets.get(scope = 'formula1-scope', key = 'fomula1dlg2-demo-sas-token')
-with images:
+
+
 
 
 

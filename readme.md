@@ -70,10 +70,12 @@ This section focuses on enhancing security:
 
 ![Image](https://github.com/user-attachments/assets/2c4a81f7-5658-4326-98fb-4f72f696aa3a)
 
-![Image](https://github.com/user-attachments/assets/e84da5b3-ffe5-49c5-b7c2-eb4615447bf3)
+
 
 ## Creating Azure Key Vault:
 Create a Key Vault named "formula1-az-key-vault1" in the same resource group, select region (e.g., UK South), and configure access policy. 
+
+![Image](https://github.com/user-attachments/assets/e84da5b3-ffe5-49c5-b7c2-eb4615447bf3)
 
 ![Image](https://github.com/user-attachments/assets/bdf6cf4c-f9a5-4225-a252-7ed838b931b9)
 

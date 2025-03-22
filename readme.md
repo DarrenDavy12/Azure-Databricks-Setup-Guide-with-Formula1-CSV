@@ -173,6 +173,18 @@ For service principal, store Client ID, Tenant ID, and Client Secret in Key Vaul
 ![Image](https://github.com/user-attachments/assets/d3b6bf42-08f0-4b23-901b-49a7cc08fc9b)
 
 
+![Image](https://github.com/user-attachments/assets/42c20438-9ab0-4f5e-bfc6-0d5c9ad219a3)
+
+
+![Image](https://github.com/user-attachments/assets/f5c2072d-9b5e-4bd7-980b-0d686812d090)
+
+
+![Image](https://github.com/user-attachments/assets/8489774c-bf79-4663-8137-d4e40fa9d376)
+
+
+
+
+
 ## Using Secrets in Clusters:
 Add Spark config in cluster settings, restart cluster, and test access without notebook configurations. Note requirement for mounting in certain subscriptions, with images:
 

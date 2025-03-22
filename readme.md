@@ -184,14 +184,21 @@ For service principal, store Client ID, Tenant ID, and Client Secret in Key Vaul
 
 
 
-
 ## Using Secrets in Clusters:
 Add Spark config in cluster settings, restart cluster, and test access without notebook configurations. Note requirement for mounting in certain subscriptions, with images:
+
+
+![Image](https://github.com/user-attachments/assets/c808e104-e12d-400c-aa78-95835e2ed458)
+
+![Image](https://github.com/user-attachments/assets/908a6b55-2f70-461f-bd61-191323e7ed99)
+
+![Image](https://github.com/user-attachments/assets/2b68eded-ba2a-4fc2-ae20-ac19e73fb7a3)
 
 
 
 ## Mounting Data Lake Container to Databricks
 This section covers mounting for easier data access:
+
 
 Benefits (unordered list):
 Access data without requiring credentials
@@ -199,13 +206,29 @@ Access files using file semantics storage URLs (e.g., /mnt/storage1)
 Stores files to object storage (e.g., Azure Blob), leveraging all Azure benefits
 Recommended solution until Unity Catalog introduction
 Databricks File System (DBFS):
+
 Create notebook "explore_dbfs_root", list root folders with display(dbutils.fs.ls('/')), enable DBFS File Browser, and upload files. Note limitations for customer data, with images:
 
 
+![Image](https://github.com/user-attachments/assets/f1427766-9c91-4055-a91b-e986886f7bb4)
 
+![Image](https://github.com/user-attachments/assets/de5d4fb7-abaf-4a3b-8081-6d60ce6b0333)
 
+![Image](https://github.com/user-attachments/assets/419bf387-5682-4db1-8cbd-9c4e060caf52)
 
+![Image](https://github.com/user-attachments/assets/abcd6b6b-f095-4d85-9252-56ab4adeff76)
 
+![Image](https://github.com/user-attachments/assets/5962e7f2-0aec-4345-926b-4d1e55dde0c9)
+
+![Image](https://github.com/user-attachments/assets/c4f74af1-659e-4109-9b1a-3b4bb52bb3c5)
+
+![Image](https://github.com/user-attachments/assets/83bdecb1-36af-49d3-9278-74f2c83ae5bc)
+
+![Image](https://github.com/user-attachments/assets/3d9fd9c0-f1f4-418a-9fe8-0a637c813754)
+
+![Image](https://github.com/user-attachments/assets/7a6983c8-6a9e-49b1-879e-c6afe672b521)
+
+![Image](https://github.com/user-attachments/assets/fc1f9396-b722-4ea8-b8d8-8214e0ed5432)
 
 
 
@@ -214,7 +237,23 @@ Mounting Azure Data Lake Storage Gen2:
 Clone service principal notebook, use Key Vault credentials, mount with dbutils.fs.mount, and explore utilities. Include images:
 
 
+![Image](https://github.com/user-attachments/assets/c1885c3b-4a44-4242-bef6-865379ea6668)
 
+![Image](https://github.com/user-attachments/assets/6834f619-5021-408c-9e07-4d5b71e761ce)
+
+![Image](https://github.com/user-attachments/assets/1886d887-5f2d-4ee6-96ad-eddf118b8a0b)
+
+![Image](https://github.com/user-attachments/assets/ff35df89-8e91-4e73-a698-6a10fc089c29)
+
+![Image](https://github.com/user-attachments/assets/62bc0c73-3431-43aa-b04c-37d0e5066e3c)
+
+![Image](https://github.com/user-attachments/assets/2d37d6b1-be52-417f-8f0f-33a0ff403a5e)
+
+![Image](https://github.com/user-attachments/assets/9e4b8db1-9b29-472c-8b4c-2e8826dfaa1a)
+
+![Image](https://github.com/user-attachments/assets/6ead8789-fb87-4f83-92da-48117c8fb876)
+
+![Image](https://github.com/user-attachments/assets/7f657a3b-4d75-43b7-8017-afe33cf594c6)
 
 
 
@@ -225,8 +264,20 @@ Mounting with Python Function:
 Create mount_adls function for dynamic mounting, shown in, and use for other containers, adding unmount logic to avoid errors, with images:
 
 
+![Image](https://github.com/user-attachments/assets/6aa3d60a-e1b2-49f8-b283-abcfecf060c8)
 
 
+![Image](https://github.com/user-attachments/assets/19576ce2-e81c-4a8d-82d3-c70f2402b81c)
 
 
+![Image](https://github.com/user-attachments/assets/7990bcb6-9032-4ab8-a373-19077fecea89)
+
+
+![Image](https://github.com/user-attachments/assets/9aefe0c0-69dc-4961-94df-9eec63fd57e8)
+
+
+![Image](https://github.com/user-attachments/assets/1a39feda-4393-49cb-96f5-3aab4109b28d)
+
+
+![Image](https://github.com/user-attachments/assets/415ffd50-5d9e-43dc-ad6a-01215ef0c5a8)
 

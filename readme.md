@@ -2,7 +2,7 @@
 
 ## Azure resources setup:
 
-Create a Databricks workspace named "databrickslearning-ws" (premium tier).
+Create a Databricks workspace named "databrickslearning-ws" (premium tier)
 
 ![Image](https://github.com/user-attachments/assets/4509beaa-5e24-4db9-80a2-48f8ac204293)
 
@@ -49,18 +49,29 @@ Access Methods:
 Using Access Keys: Set Spark config fs.azure.account.key, list files, and read data.
 ![image](https://github.com/user-attachments/assets/50aaf024-27ef-46cf-874b-2c8e7aa731b2)
 
-![Image](https://github.com/user-attachments/assets/4d8d9bdd-b6ab-45f3-8ac8-4a272cd0dd77)
+![Image](https://github.com/user-attachments/assets/69e0c7de-79a9-4e8d-9928-be810db3cb71)
 
 Using SAS Token: Similar steps, with images.
+![Image](https://github.com/user-attachments/assets/eb103377-440e-41a4-9c0e-aff5c59f4b2b)
 
-Using Service Principal: Register application, generate secret, set Spark config, and assign role, with.
-Using Cluster Scoped Credentials: Set Spark config in cluster, list files, and read data, with imagesand.
+![Image](https://github.com/user-attachments/assets/f3d1e397-d787-415a-85a1-d704f6856618)
+
+
+Using Service Principal: Register application, generate secret, set Spark config, and assign role.
+![Image](https://github.com/user-attachments/assets/4e829266-171f-4d22-98e6-d024f1bb39c7)
+
+Using Cluster Scoped Credentials: Set Spark config in cluster, list files, and read data.
+![Image](https://github.com/user-attachments/assets/a3ec9cc9-89cb-4c5a-bb2e-549f3109bf7b)
+
+
 Securing Access to Azure Data Lake
 This section focuses on enhancing security:
 
+
+
+
 ## Creating Azure Key Vault:
 Create a Key Vault named "formula1-az-key-vault1" in the same resource group, select region (e.g., UK South), and configure access policy. Include images for each step:
-
 
 
 

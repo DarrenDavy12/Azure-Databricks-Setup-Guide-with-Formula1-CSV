@@ -139,8 +139,9 @@ formula1dlg2_demo_sas_token = dbutils.secrets.get(scope = 'formula1-scope', key 
 
 ![Image](https://github.com/user-attachments/assets/81c908be-fd3b-4283-b013-cc4124f53098)
 
+![Image](https://github.com/user-attachments/assets/9aae5637-4ef7-4415-b785-ed8acf4fd779)
 
-
+![Image](https://github.com/user-attachments/assets/fd75faa4-dac0-44bd-b962-09f6a09a897a)
 
 
 

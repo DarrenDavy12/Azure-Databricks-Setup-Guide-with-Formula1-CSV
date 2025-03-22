@@ -63,35 +63,39 @@ Using Service Principal: Register application, generate secret, set Spark config
 Using Cluster Scoped Credentials: Set Spark config in cluster, list files, and read data.
 ![Image](https://github.com/user-attachments/assets/a3ec9cc9-89cb-4c5a-bb2e-549f3109bf7b)
 
+![Image](https://github.com/user-attachments/assets/d6b797c2-b588-4cb5-9c2e-f2c9ca76d211)
 
 Securing Access to Azure Data Lake
 This section focuses on enhancing security:
 
+![Image](https://github.com/user-attachments/assets/2c4a81f7-5658-4326-98fb-4f72f696aa3a)
 
-
+![Image](https://github.com/user-attachments/assets/e84da5b3-ffe5-49c5-b7c2-eb4615447bf3)
 
 ## Creating Azure Key Vault:
-Create a Key Vault named "formula1-az-key-vault1" in the same resource group, select region (e.g., UK South), and configure access policy. Include images for each step:
+Create a Key Vault named "formula1-az-key-vault1" in the same resource group, select region (e.g., UK South), and configure access policy. 
 
+![Image](https://github.com/user-attachments/assets/bdf6cf4c-f9a5-4225-a252-7ed838b931b9)
 
-
-
+![Image](https://github.com/user-attachments/assets/4ae8af80-36d3-461f-b7a6-55b5da005d0d)
 
 
 ## Creating Secret Scope for Databricks:
-Navigate to workspace, append #secrets/createScope to URL, name scope "formula1-scope", and provide DNS name and Resource ID, with images:
+Navigate to workspace, append #secrets/createScope to URL, name scope "formula1-scope", and provide DNS name and Resource ID.
 
-
+![Image](https://github.com/user-attachments/assets/584e4359-4879-45a9-86b2-9faee4e1bf4e)
 
 
 
 ## Databricks Secrets Utility:
-Create notebook "explore_dbutils_secrets_utility" to manage secrets, avoiding hardcoded values, with images:
+Create notebook "explore_dbutils_secrets_utility" to manage secrets, avoiding hardcoded values.
+
+![Image](https://github.com/user-attachments/assets/393107ff-ef90-4697-a920-9de61fb3b76b)
 
 
 ## Using Secrets in Notebooks:
-For access keys, use dbutils.secrets.get and assign to variables, with images:
-
+For access keys, use dbutils.secrets.get and assign to variables.
+![Image](https://github.com/user-attachments/assets/30228de8-38c8-4a52-84e5-130fb977cd49)
 
 
 For SAS token, generate new token, store in Key Vault, and use code:

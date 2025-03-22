@@ -87,19 +87,20 @@ Create a Key Vault named "formula1-az-key-vault1" in the same resource group, se
 ## Creating Secret Scope for Databricks:
 Navigate to workspace, append #secrets/createScope to URL, name scope "formula1-scope", and provide DNS name and Resource ID.
 
-![Image](https://github.com/user-attachments/assets/584e4359-4879-45a9-86b2-9faee4e1bf4e)
+![Image](https://github.com/user-attachments/assets/a65d07b8-5d2c-4563-b63b-4be70ce184ad)
+
 
 
 
 ## Databricks Secrets Utility:
 Create notebook "explore_dbutils_secrets_utility" to manage secrets, avoiding hardcoded values.
 
-![Image](https://github.com/user-attachments/assets/393107ff-ef90-4697-a920-9de61fb3b76b)
+
 
 
 ## Using Secrets in Notebooks:
 For access keys, use dbutils.secrets.get and assign to variables.
-![Image](https://github.com/user-attachments/assets/30228de8-38c8-4a52-84e5-130fb977cd49)
+
 
 
 For SAS token, generate new token, store in Key Vault, and use code:

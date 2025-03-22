@@ -126,7 +126,9 @@ For SAS token, generate new token, store in Key Vault, and use code:
 
 ![Image](https://github.com/user-attachments/assets/f861a225-28ec-4638-b1a5-a7ae6a3e9383)
 
-![Image](https://github.com/user-attachments/assets/a28f0f9a-84e7-42b3-9afa-4d5d38fa7b67)
+![image](https://github.com/user-attachments/assets/634b8042-db8a-4981-915b-3aa7e463a5d5)
+
+![image](https://github.com/user-attachments/assets/25daa138-e2f5-4854-9ec7-51b35193d2a9)
 
 
 python:

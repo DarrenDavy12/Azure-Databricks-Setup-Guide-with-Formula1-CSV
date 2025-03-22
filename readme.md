@@ -130,6 +130,11 @@ For SAS token, generate new token, store in Key Vault, and use code:
 
 ![image](https://github.com/user-attachments/assets/25daa138-e2f5-4854-9ec7-51b35193d2a9)
 
+![Image](https://github.com/user-attachments/assets/b5e779a1-6a88-4a12-b860-2c8c21819359)
+
+![Image](https://github.com/user-attachments/assets/81c908be-fd3b-4283-b013-cc4124f53098)
+
+
 
 python:
 

@@ -118,6 +118,11 @@ For access keys, use dbutils.secrets.get and assign to variables.
 
 For SAS token, generate new token, store in Key Vault, and use code:
 
+python:
+
+formula1dlg2_demo_sas_token = dbutils.secrets.get(scope = 'formula1-scope', key = 'fomula1dlg2-demo-sas-token')
+
+
 ![Image](https://github.com/user-attachments/assets/d306e5a7-c20c-497f-87a1-203c5c8471dd)
 
 ![Image](https://github.com/user-attachments/assets/b0e0ca34-906c-47c7-a431-e7deaa6e9696)
@@ -133,15 +138,6 @@ For SAS token, generate new token, store in Key Vault, and use code:
 ![Image](https://github.com/user-attachments/assets/b5e779a1-6a88-4a12-b860-2c8c21819359)
 
 ![Image](https://github.com/user-attachments/assets/81c908be-fd3b-4283-b013-cc4124f53098)
-
-
-
-python:
-
-formula1dlg2_demo_sas_token = dbutils.secrets.get(scope = 'formula1-scope', key = 'fomula1dlg2-demo-sas-token')
-
-
-
 
 
 
